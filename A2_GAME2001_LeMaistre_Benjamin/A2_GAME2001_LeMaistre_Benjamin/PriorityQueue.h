@@ -22,7 +22,7 @@ public:
 
 		if (m_elements.GetSize() == 0)
 		{
-			m_elements.Push_Back(val, priority);
+			m_elements.Push_Front(val, priority);
 
 		}
 		else
