@@ -45,16 +45,11 @@ public:
 	}
 	~LinkIterator() {}
 	// ----------- OVERLOADED OPERATORS ------------------
+
 	// Assignmnet operator (=) <-- Set the iterator to point to a node  // a = b
 	void operator=(LinkNode<T>* node)
 	{
 		m_node = node;
-	}
-	// Dereferencing operator (*) <-- Read the data stored on the node being pointed too // itr*
-	T& operator*()
-	{
-		assert(m_node != nullptr);
-		return m_node->m_data;
 	}
 	// Incremental operator (++) Prefix and Postfox <-- Move the iterator to the next node
 	void operator++()	// Prefix
@@ -91,7 +86,8 @@ public:
 	{
 		return (m_node != NULL);
 	}
-
+	
+	//returns the node that the iterator is using 
 	LinkNode<T>* getNode() 
 	{
 		return m_node;

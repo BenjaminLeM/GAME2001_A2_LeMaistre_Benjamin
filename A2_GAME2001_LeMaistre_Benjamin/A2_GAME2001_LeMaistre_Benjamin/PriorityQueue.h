@@ -29,7 +29,7 @@ public:
 		{
 			LinkIterator<T> it;
 			it = m_elements.Begin();
-
+			
 			while (it.isValid())
 			{
 				//if new input priority is greater than the selected node then move to next node 
@@ -55,12 +55,12 @@ public:
 		m_elements.Pop_Front();
 	}
 
-	T& front()
+	T front()
 	{
 		LinkIterator<T> it;
 		it = m_elements.Begin();
 
-		return *it;
+		return it.getNode()->getData();
 	}
 	
 	int frontPriority()
@@ -70,12 +70,12 @@ public:
 		return it.getNode()->getPriority();
 	}
 	
-	T& back()
+	T back()
 	{
 		LinkIterator<T> it;
 		it = m_elements.Last();
 
-		return *it;
+		return it.getNode()->getData();
 	}
 	
 	int backPriority()

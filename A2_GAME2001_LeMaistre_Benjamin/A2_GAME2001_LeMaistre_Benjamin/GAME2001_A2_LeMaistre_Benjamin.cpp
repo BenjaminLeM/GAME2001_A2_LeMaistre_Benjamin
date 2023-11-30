@@ -26,7 +26,7 @@ int main()
 
 	const int SIZE = 10;
 	PriorityQueue<NetworkMessage> que(SIZE);
-
+	
 	que.push(NetworkMessage(474), 34);
 	que.push(NetworkMessage(478), 15);
 	que.push(NetworkMessage(286), 4);
@@ -37,7 +37,7 @@ int main()
 	que.push(NetworkMessage(437), 17);
 	que.push(NetworkMessage(285), 42);
 	que.push(NetworkMessage(36), 21);
-
+	
 	// Display the priority queue
 	cout << "Priority queue content (Size: " << que.GetSize() << ") : " << endl;
 
