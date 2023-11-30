@@ -128,9 +128,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GAME2001_A2_LeMaistre_Benjamin.cpp" />
-    <ClCompile Include="PriorityQueueDoublyLinkedList.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PriorityQueue.h" />
     <ClInclude Include="PriorityQueueDoublyLinkedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
